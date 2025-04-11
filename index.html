@@ -5,9 +5,11 @@
     <!-- Meta Tag to set the page's viewport to be mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="container">
+
+
+<body class="container minicontainter">
     <!-- Start of Navigation -->
      <nav class="desktop-nav">
         <a href="#">
@@ -15,75 +17,333 @@
             <span class="logo-name logo-name-bold">Colmar</span>
             <span class="logo-name logo-name-thin">Academy</span>
         </a>
-
+        
         <ul class="navlist">
             <li class="nav-item"><a href="#">Our Campus</a></li>
             <li class="nav-item"><a href="#">Online</a></li>
-            <li class="nav-item"><a href="#">For Companies</a></li>
+            <li class="nav-item"><a href="#">For companies</a></li>
             <li class="nav-item"><a href="#">Sign in</a></li>
         </ul>
      </nav>
     <!-- End of Navigation -->
 
-    <!-- Start of Header (Hero Banner) -->
-    <header class="header-picture">
-        <img src="images/capstone_colmar_assets/images/banner.jpg" alt="Learn something new banner">
-     </header>
-     <header class="header-content">
-        <div>
-            <h1>Learn something new everyday</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <a href="#">Start here</a>
-        </div>
-     </header>
-    <!-- End of Header (Hero Banner) -->
+    <!-- All the Logos for Mobile -->
+    <nav class="mobile-nav">
+        <a href="#"><img src="./images/capstone_colmar_assets/images/ic-logo.svg" alt="Colmar Academy Logo"></a>
+        <a href="#"><img src="/images/capstone_colmar_assets/images/ic-on-campus.svg" alt="Campus Logo"></a>
+        <a href="#"><img src="images/capstone_colmar_assets/images/ic-online.svg" alt="Online Logo"></a>
+        <a href="#"><img src="images/capstone_colmar_assets/images/ic-login.svg" alt="Log in Logo"></a>
+    </nav>
 
-    <!-- Start of Practice Section -->
-     <section class="practice">
-        <img src="/images/capstone_colmar_assets/images/information-main.jpg" alt="Start Practicing Banner">
-        <h3>Doesn't hurt to keep practicing</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore neque dolore culpa id facere deserunt tenetur quas pariatur. Sed quibusdam laudantium molestias quae numquam debitis aut, inventore iste cum."
+    <!-- Start of Header (Hero banner) -->
+    <div class="mainheader minicontainter" style="width: 100%; margin: 0 auto; clear: both;">
+        <section>
+            <div class="custom-container">
+             <div class="custom-content">
+               <div class="custom-media">
+                <header class="header-picture">
+                    <img src="images/capstone_colmar_assets/images/banner.jpg" alt="Learn something new banner">
+                </header>
+              </div>
+              <div class="custom-text">
+                <div class="learningsthspace">
+                    <h2 class="custom-text--heading">Learn something new everyday</h2>
+                    <p class="custom-text--copy">Just put loremmm epsum</p>
+                    <a class="custom-text--button" >Start here</a>          
+                </div>
+               </div>
+             </div>
+            </div>
+           </section>
+    </div>
+    <!-- End of Header (Hero banner) -->
 
-        <span class="quote-name">Emanuel, Sr Strategist at Hiring.com</span>
-        </p>
-     </section>
 
-     <section class="events">
-        <div class="event-block">
-            <img src="/images/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="Orientation Picture">
-            <div class="event-block-content">
-                <!-- TODO, the word Orientation cant fit -->
-                <h4>Orientation</h4>
-                <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
-                <a href="#">Read more</a>
+
+    <!-- Start of the Dont Hurt Me -->
+    <div class="mainheader" style="width: 100%; margin: 0 auto; clear: both;">
+        <section>
+            <div class="custom-container">
+             <div class="custom-content" style="background-color: #FFF; align-items: normal; display: block;">
+               <div class="custom-media hideformobile" style="width: 60%; float: left;">
+                <section class="practice" style="clear: both;">
+                    <img src="images/capstone_colmar_assets/images/information-main.jpg" alt="Start practicing banner">
+                    <h3>It doesn't hurt to keep practicing</h3>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci officia maxime esse, nisi est expedita nobis fugit sunt atque pariatur doloremque voluptates ea at tenetur. Quam vitae ab nam?"
+            
+                    <span class="quote-name">Emanuel, Snr Strategist at Hiring.com</span>
+                    </p>
+                </section>
+              </div>
+              <div class="custom-text">
+                
+                <section class="events">
+                    <div class="event-block">
+                        
+                        <div class="stackformobileonly">
+                            <div class="bigfordesktop">
+                                <img src="images/capstone_colmar_assets/images/information-orientation.jpg" alt="Orientation Thumbnail">
+                            </div>
+
+                            <div class="smallformobile">
+                                <img src="images/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="Orientation Thumbnail">
+                            </div>
+                            
+                        </div>
+
+                        <div class="stackformobileonly">
+                            <div class="event-block-content">
+                                <h2>Orientation date</h4>
+                                <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="event-block">
+                        <div class="bigfordesktop">
+                            <img src="images/capstone_colmar_assets/images/information-campus.jpg" alt="Campus Thumbnail">
+                        </div>
+                        <div class="smallformobile">
+                            <img src="images/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="Campus Thumbnail">
+                        </div>
+
+
+                        
+                        <div class="event-block-content">
+                            <h2>Our Campus</h4>
+                            <p>Find which campus is close to you</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="event-block">
+
+
+                        <div class="bigfordesktop">
+                            <img src="images/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Guest Lecture Thumbnail">
+                        </div>
+                        <div class="smallformobile">
+                            <img src="images/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="Guest Lecture Thumbnail">
+                        </div>
+
+                       
+                        <div class="event-block-content">
+                            <h2>Our guest lecture</h4>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </section>         
+              
+               </div>
+             </div>
             </div>
-        </div>
-        <div class="event-block">
-            <img src="/images/capstone_colmar_assets/images/information-campus.jpg" alt="Campus Picture">
-            <div class="event-block-content">
-                <h4>Our Campus</h4>
-                <p>Find which campus is close to you</p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-        <div class="event-block">
-            <img src="images/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Guest Lecturer">
-            <div class="event-block-content">
-                <h4>Our Guest lecture</h4>
-                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-     </section>
-    <!-- End of Practice Section -->
+           </section>
+    </div>
+    <!-- End of the Dont Hurt Me -->
+
+
+
+    <div style="padding-top: 32px;">
+        <br/>
+    </div>
+
+
+
 
     <!-- Start of Learning Section -->
-    <!-- End of Learning Section -->
+    <!-- The Header of the "Start Learning" -->
+    <section class="learning" style="padding-top: 32px;"> 
+        <div class="learningtitle" style="padding-top: 32px; padding-bottom: 32px;">Start learning</div>
+        <div class="showcasecontainer">
+    <!-- The Header of the "Start Learning" -->
+            
+    <!--learning plan starts-->
+    <!-- + Make the Picture Gone When Mobile Version -->
+    <div class="course">
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-software.jpg" alt="Computer Picture">
+                </div>
+                
+                <div class="learning-picture">
+                    <h4>Software engineering</h4>
+                    <p class="picturegone">COURSES</p>
+                        <p class="picturegone">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-computer-art.jpg" alt="Phone Picture">
+                </div>
+                
+                <div class="learning-picture">
+                        <h4>Computer art</h4>
+                        <p class="picturegone">COURSES</p>
+                        <p class="picturegone">Imagine &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+              </div>
+            </div>
+        </div>      
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-design.jpg" alt="Holding Camera Picture">
+                </div>
+                
+                <div class="learning-picture">
+                    <h4>Design</h4>
+                    <p class="picturegone">COURSES</p>
+                        <p class="picturegone">User Experience Design, User Research, Visual Design</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Second Row -->
+    <div class="course">
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-data.jpg" alt="Laptop Picture">
+                </div>
+                
+                <div class="learning-picture">
+                    <h4>Data</h4>
+                    <p class="picturegone">COURSES</p>
+                        <p class="picturegone">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-business.jpg" alt="Chess Picture">
+                </div>
+                <div class="learning-picture">
+                    <h4>Business</h4>
+                    <p class="picturegone">COURSES</p>
+                        <p class="picturegone">Product Development, Business Development, Startup</p>
+                </div>
+            </div>
+        </div>      
+        <div class="course-plan">
+            <div class="learning-block">
+                <div class="picturegone">
+                    <img src="images/capstone_colmar_assets/images/course-marketing.jpg" alt="Smartwatch Picture">
+                </div>
+                
+                <div class="learning-picture">
+                    <h4>Marketing</h4>
+                    <p class="picturegone">COURSES</p>
+                        <p class="picturegone">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
+        </div>
+        </div>
 
-    <!-- Start of Thesis Section -->
-    <!-- End of Thesis Section -->
 
-    <!-- Start of Footer -->
-    <!-- End of Footer -->
+            
+    </div>
+    </section>
+
+
+
+    <div class="video-container">
+        <div class="learningtitle" style="padding-top: 32px; padding-bottom: 32px;">Thesis exhibit</div>
+
+        <!-- Dont display when desktop -->
+        <div class="smallformobile">
+            <video width="100%" controls>
+                <source src="/videos/thesis.mp4" type="video/mp4" style="padding-top: 32px; padding-bottom: 32px;">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+     <!-- Start of the thesis -->
+     <div class="mainheader" style="width: 100%; margin: 0 auto; clear: both;">
+        <section>
+            <div class="custom-container">
+             <div class="custom-content" style="background-color: #FFF; align-items: normal; display: block;">
+               <div class="custom-media" style="width: 60%; float: left;">
+                
+                <section class="practice" style="clear: both;">
+                    <div class="bigfordesktop">
+                    <video width="100%" controls>
+                        <source src="/videos/thesis.mp4" type="video/mp4" style="padding-top: 32px; padding-bottom: 32px;">
+                        Your browser does not support HTML video.
+                      </video>
+                    </div>
+                    
+                    <h3 class="hideformobile">Reimagine urban</h3>
+                    <p  class="hideformobile">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci officia maxime esse, nisi est expedita nobis fugit sunt atque pariatur doloremque voluptates ea at tenetur. Quam vitae ab nam?"
+                    </p>
+                    
+                </section>
+                
+              </div>
+
+              <!-- Change the view from Desktop to Mobile -->
+              <div class="custom-text hideformobile">
+                
+                <section class="events">
+                    <div class="event-block" style="background-color: #D8D8D8;">
+                        
+                        <div class="stackformobileonly">
+                            <div class="bigfordesktop">
+                                <img src="images/capstone_colmar_assets/images/information-orientation.jpg" alt="Orientation Thumbnail">
+                            </div>
+
+                            <div class="smallformobile">
+                                <img src="images/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="Orientation Thumbnail">
+                            </div>    
+                        </div>
+
+                        <div class="stackformobileonly">
+                            <div class="event-block-content">
+                                <h2>Figma: Design and Prototype</h4>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="event-block" style="background-color: #FFF;">
+                        <div class="bigfordesktop">
+                            <img src="images/capstone_colmar_assets/images/information-campus.jpg" alt="Campus Thumbnail">
+                        </div>
+                        <div class="smallformobile">
+                            <img src="images/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="Campus Thumbnail">
+                        </div>
+                        
+                        <div class="event-block-content">
+                            <h2>Now and then</h4>
+                            <p>Find which campus is close to you</p>
+                        </div>
+                    </div>
+                </section>         
+              
+               </div>
+             </div>
+            </div>
+           </section>
+    </div>
+    <!-- End of the thesis -->
+
+    <div style="padding-top: 32px;">
+        <br/>
+    </div>
+
+    <div style="clear: both;">
+    <footer class="site-footer">
+        <div class="footer-left">© 2025 Colmar Academy reserved</div>
+        <div class="footer-right hideformobile">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div>
+    </footer>
+    </div>
+    
 </body>
 </html>

@@ -1,0 +1,633 @@
+/* import font from Google CDN */
+@import url('href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap"');
+
+/* Universal selector used to reset all margins and paddings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+
+.container{
+    grid-template-columns: [full--start] 0.6fr [center--end center--start] 0.4fr [full--end];
+    grid-template-rows: repeat(6, min-content);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.minicontainter {
+    max-width: 1520px;
+}
+
+/* Start of the Desktop View */
+/* ************************* */
+
+/* ! Start of Desktop Navigation */
+.desktop-nav{
+    grid-column: full--start/full--end;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.desktop-nav > a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 2rem;
+    padding-left: 1.5rem;
+    width: auto;
+}
+
+.logo-name{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.logo-name-bold{
+    font-weight: bold;
+    color: #484848;
+}
+
+.logo-name-thin{
+    font-weight:400;
+    color: #aaa;
+}
+
+.navlist{
+    list-style: none;
+    display: flex;
+}
+
+.navlist :hover{
+    color: #32343a;
+}
+
+.navlist a{
+    display: inline-block;
+    text-decoration: none;
+    color: #828282;
+    font-size: 1rem;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 1rem;
+}
+
+.nav-item:last-child{
+    margin-right: 1.5rem;
+}
+
+.learningtitle{
+    font-size: 60px;
+    color: #4f4f4f;
+}
+
+.learning{
+    width: 100%;
+    margin: auto;
+
+    background-color: #eaebec;
+    padding: 0px;
+}
+
+.showcasecontainer{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px ;
+}
+
+.learning-block img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.learning-block h4{
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 30px;
+    padding: 16px 10px;
+}
+
+.learning-block p{
+    padding: 8px 10px;
+    color: #9f9f9f;
+}
+
+.learning-picture{
+    font-size: larger;
+    background-color: #ffffff;
+    padding: 16px 16px 24px 16px;
+}
+
+.learningtitle{
+    color: #4a4a4a;
+    text-align: center;
+    padding: 32px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+/* End of Desktop Navigation */
+
+/* ! Start of Desktop Header */
+
+.header-picture{
+    display: flex;
+    background-color: #d8d8d8;
+    padding: 32px 24px 32px 24px;
+}
+
+.header-picture img{
+    width: 100%;
+    height: auto;
+}
+
+.header-content{
+    background-color: #d8d8d8;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content div h1{
+    font-size: 2.5rem;
+    color: #484848;
+}
+
+.header-content div h2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #484848;
+    padding: 1rem 0;
+}
+
+.header-content div{
+    width: 80%;
+}
+
+.header-content div a:link{
+    display: block;
+    width: 100%;
+    align-self: stretch;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-content div a:hover{
+    background-color: rgba(72, 72, 72, 0.5);
+}
+
+.header-content div a:active,
+.header-content div a:visited{
+    color: #fff;
+    text-decoration: none;
+    background-color: #4a4a4a;
+}
+
+.smallformobile {
+    display: none;
+}
+
+/* End of Desktop Header */
+
+/* ! Start of Practice Section */
+
+.practice{
+    background-color: #FFF;
+    padding: 32px 24px;
+    
+}
+
+.practice img{
+    width: 100%;
+    height: auto;
+}
+
+.practice h3{
+    padding: 2rem 0 1.5rem 0;
+    color: #484848;
+}
+
+.practice p{
+    font-size: small;
+    color: #484848;
+}
+
+.practice video{
+    display: block;
+    margin: 0;
+}
+
+
+.quote-name{
+    display: block;
+    margin: 2rem 0;
+}
+
+.events{
+
+    grid-template-rows: repeat(3, min-content);
+    border-left: 1px solid #e7e7e7;
+}
+
+.events-mobile{
+    grid-template-columns: full--start/full--end;
+    padding: 1 rem;
+}
+
+.events-mobile .event-block{
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+}
+
+.events-mobile .event-block img{
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+}
+.event-block{
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: small;
+    color: #484848;
+    padding: 32px;
+}
+
+.event-block img{
+    width: 100%;
+    height: auto;
+}
+
+.event-block-content{
+    margin: 0 2rem;
+}
+
+.event-block-content p{
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.event-block-content a:link,
+.event-block-content a:active,
+.event-block-content a:visited
+{
+    color: #4f4f4f;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.event-block:last-child{
+    background-color: #d8d8d8;
+}
+
+/* End of Practice Section */
+
+/* *********************** */
+/* End of the Desktop View */
+
+/* Start of Mobile View */
+/* ******************** */
+.mobile-nav{
+    display: none;
+}
+
+/* if the width of screen is 640px, aka 40rem */
+@media only screen and (max-width: 950px) {
+
+.desktop-nav{
+    display: none;
+}
+
+.mobile-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: full--start / full--end;
+    height: 4rem;
+    width: auto;
+    border: 100px rgb(246, 0, 0);
+}
+
+.container{
+    max-width: 100dvw;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+}
+
+.header-picture{
+    grid-column: full--start / full--end;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-picture img{
+    padding: 0;
+}
+
+.header-content{
+    display: flex;
+    grid-column: full--start / full--end;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.header-content div h1{
+    font-size: xx-large;
+    padding: 0 0 2rem 0;
+}
+
+.header-content div h2{
+    font-size: larger;
+    padding: 0 0 1.5rem 0; 
+}
+
+.header-content div{
+    display: block;
+    width: 100%;
+}
+
+.header-content div a:link{
+    display: block;
+    width: 100%;
+    align-self: stretch;
+    background-color: rgb(72, 72, 72, 0.5);
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-content div a:hover{
+    background-color: #484848;
+}
+
+.header-content div a:visited, 
+.header-content div a:active{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(72, 72, 72, 0.5);
+}
+
+.event-block-content {
+    margin: 0px;
+    padding-top: 16px;
+}
+
+.bigformobile {
+    display: none;
+}
+
+}
+/* ****************** */
+/* End of Mobile View */
+
+/* HEADING */
+.custom-text--heading {
+    color: #4a4a4a;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* BODY TEXT */
+.custom-text--copy {
+    color: #2d2e31;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+/* LINK OR BUTTON */
+.custom-text--button {
+    background: #4a4a4a;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px;
+    width: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* HOVER AND KEYBOARD FOCUS EFFECT */
+.custom-text--button:hover, .custom-text--button:active, .custom-text--button:focus {
+    background: #32343a;
+    outline: 2px solid #425ccd;
+}
+
+.learning-block :hover{
+    background: #d8d8d8;
+}
+
+/*Picture and Images*/
+.custom-media--image {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-container {
+    margin: auto;
+    background-color: #d8d8d8;
+}
+
+.custom-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.custom-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.custom-media {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 950px) {
+.custom-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding: 0px;
+ }
+
+.custom-text {
+    margin: auto;
+    width: 90%;
+    text-align: left;
+    grid-row: 2;
+}
+
+.custom-text--heading {
+    text-align: left;
+}
+
+.custom-text--button {
+    display: flex;
+    text-align: center;
+}
+  
+.event-block:last-child {
+    background-color: #FFF;
+}
+
+.event-block {
+    border-bottom: 0px solid #FFF;
+    display: block;
+}
+
+.learningsthspace {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+}
+
+.custom-text--heading  {
+    font-size: 40px;
+}
+
+.bigfordesktop {
+    display: none;
+}
+
+.smallformobile {
+    display: block;
+}
+}
+
+@media screen and (max-width: 568px) {
+.custom-text {
+    padding: 0px 20px;
+    padding-bottom: 32px;
+}
+
+.custom-text--heading {
+    font-size: 25px;
+}
+
+.custom-text--copy,
+.custom-text--button {
+    font-size: 16px;
+}
+
+.bigfordesktop {
+    display: none;
+}
+
+.smallformobile {
+display: block;
+}
+}
+
+
+.course {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.course-plan {
+    flex: 1;
+    margin: 15px 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    color: #fff;
+}
+  
+@media (max-width: 949px) {
+.course {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.hideformobile {
+    display: none;
+}
+
+.learning {
+    background-color: #FFF;
+}
+
+.picturegone {
+    display: none;
+}
+
+.learning-picture {
+    background-color: #d8d8d8;
+    padding: 24px 16px;
+}
+
+.custom-text {
+    width: 100%
+}
+
+.events {
+    border-left: 0px solid #FFF;
+}
+
+.stackformobileonly {
+    clear: both;
+}
+
+.bigfordesktop {
+    display: none;
+}
+
+.smallformobile {
+    display: block;
+}
+}
+    
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid grey;
+}
+
+.footer-right a {
+    color: #000;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+.footer-right a:hover {
+    color: blue;
+}
+  
